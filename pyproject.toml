@@ -1,0 +1,13 @@
+[project]
+name = "codex-memory"
+version = "0.1.0"
+description = "Local hybrid memory index for Codex Desktop sessions"
+requires-python = ">=3.9"
+
+[project.scripts]
+codex-memory = "codex_memory.cli:main"
+
+[project.optional-dependencies]
+vector = [
+  "qdrant-client>=1.16,<2",
+]
